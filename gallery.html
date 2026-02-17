@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Gallery - Nassar Harashi">
+    <title>Gallery | Nassar Harashi</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <nav>
+                <a href="index.html" class="logo">Nassar<span>H</span></a>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="skills.html">Skills</a></li>
+                    <li><a href="portfolio.html">Portfolio</a></li>
+                    <li><a href="gallery.html" class="active">Gallery</a></li>
+                    <li><a href="faq.html">FAQ</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                <div class="menu-toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Gallery</h1>
+            <div class="breadcrumb">
+                <a href="index.html">Home</a>
+                <span>/</span>
+                <span>Gallery</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section>
+        <div class="container">
+            <div class="section-title">
+                <h2>Project Screenshots</h2>
+                <p>Visual showcase of my work and projects.</p>
+            </div>
+
+            <div class="album-grid">
+                <article class="album-item">
+                    <img src="images/1.jpg" alt="Project 1">
+                </article>
+                <article class="album-item">
+                    <img src="images/2.jpg" alt="Project 2">
+                </article>
+                <article class="album-item">
+                    <img src="images/3.jpg" alt="Project 3">
+                </article>
+                <article class="album-item">
+                    <img src="images/4.jpg" alt="Project 4">
+                </article>
+                <article class="album-item">
+                    <img src="images/5.jpg" alt="Project 5">
+                </article>
+                <article class="album-item">
+                    <img src="images/6.jpg" alt="Project 6">
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-section">
+                    <h4>Nassar Harashi</h4>
+                    <p>Computer Engineering Student & Full Stack Developer Trainee from Palestine. Passionate about building web applications and learning new technologies.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <div class="footer-links">
+                        <a href="index.html">Home</a>
+                        <a href="about.html">About</a>
+                        <a href="skills.html">Skills</a>
+                        <a href="portfolio.html">Portfolio</a>
+                        <a href="contact.html">Contact</a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Legal</h4>
+                    <div class="footer-links">
+                        <a href="privacy-policy.html">Privacy Policy</a>
+                        <a href="return-policy.html">Return Policy</a>
+                        <a href="terms.html">Terms & Conditions</a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact Info</h4>
+                    <p>Email: nassark669@gmail.com</p>
+                    <p>Phone: 0568195145</p>
+                    <p>Location: Tulkarm, Palestine</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Nassar Harashi. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        const menuToggle = document.querySelector('.menu-toggle');
+        const navLinks = document.querySelector('.nav-links');
+        menuToggle.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });
+    </script>
+</body>
+</html>
