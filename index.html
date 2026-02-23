@@ -6,7 +6,7 @@
     <meta name="description" content="Nassar Harashi - Fifth-year Computer Engineering Student at An-Najah National University, Full Stack Developer">
     <meta name="keywords" content="portfolio, full stack developer, Node.js, Express, React, MongoDB, MySQL, JavaScript">
     <meta name="author" content="Nassar Harashi">
-    <title>Home | Nassar Harashi</title>
+    <title>Nassar Harashi | Portfolio</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Poppins:wght@600;700;800;900&display=swap" rel="stylesheet">
@@ -15,18 +15,18 @@
 </head>
 <body class="page-home">
     <!-- Header -->
-    <header>
+    <header id="top">
         <div class="container">
             <nav>
-                <a href="index.html" class="logo">Nassar<span>H</span></a>
+                <a href="#home" class="logo">Nassar<span>H</span></a>
                 <ul class="nav-links">
-                    <li><a href="index.html" class="active">Home</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="skills.html">Skills</a></li>
-                    <li><a href="portfolio.html">Portfolio</a></li>
-                    <li><a href="gallery.html">Gallery</a></li>
-                    <li><a href="faq.html">FAQ</a></li>
-                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="#home" class="active">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#gallery">Gallery</a></li>
+                    <li><a href="#faq">FAQ</a></li>
+                    <li><a href="#contact">Contact</a></li>
                 </ul>
                 <div class="menu-toggle">
                     <span></span>
@@ -37,29 +37,38 @@
         </div>
     </header>
 
-    <!-- Hero Section -->
-    <section class="hero">
+    <!-- ═══════════════════════════════════════════════════════════ -->
+    <!-- HOME SECTION -->
+    <!-- ═══════════════════════════════════════════════════════════ -->
+    <section id="home" class="hero">
         <div class="container">
             <h1>Nassar Harashi</h1>
             <p>Full Stack Developer | Computer Engineering Student at An-Najah National University</p>
             <div class="hero-buttons">
-                <a href="portfolio.html" class="btn btn-primary">View My Projects</a>
-                <a href="contact.html" class="btn btn-secondary">Contact Me</a>
+                <a href="#portfolio" class="btn btn-primary">View My Projects</a>
+                <a href="#contact" class="btn btn-secondary">Contact Me</a>
             </div>
         </div>
     </section>
 
-    <!-- About Preview Section -->
-    <section class="bg-light">
+    <!-- ═══════════════════════════════════════════════════════════ -->
+    <!-- ABOUT SECTION -->
+    <!-- ═══════════════════════════════════════════════════════════ -->
+    <section id="about" class="bg-light">
         <div class="container">
+            <div class="section-title">
+                <h2>About Me</h2>
+                <p>Get to know who I am and what I do.</p>
+            </div>
             <div class="about-content">
                 <div class="about-image">
                     <img src="images/Profile.jpg" alt="Profile Picture" class="profile-pic">
                 </div>
                 <div class="about-text">
-                    <h3>About Me</h3>
+                    <h3>Who I Am</h3>
                     <h2>Computer Engineering Student</h2>
-                    <p>I'm a fifth-year Computer Engineering student at An-Najah National University, passionate about full-stack development and modern web application design. I've built several web applications using Node.js, Express, and React, and worked with both MySQL and MongoDB databases.</p>
+                    <p>Hello! I'm Nassar Harashi, a fifth-year Computer Engineering student at An-Najah National University, from Tulkarm, Palestine. I'm passionate about full-stack development and modern web application design.</p>
+                    <p>I've built several web applications using Node.js, Express, and React, and worked with both MySQL and MongoDB databases. I have experience across the full stack, including JavaScript, Java, C/C++, Python, PHP, and JavaFX.</p>
                     <p>I enjoy solving technical challenges, learning new tools, and improving my skills through real projects and teamwork across both frontend and backend development.</p>
                     <div class="skills-list">
                         <span class="skill-tag">JavaScript</span>
@@ -71,19 +80,245 @@
                         <span class="skill-tag">Java</span>
                         <span class="skill-tag">Python</span>
                     </div>
-                    <a href="about.html" class="btn btn-primary mt-3">Learn More</a>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Featured Work -->
+    <!-- Experience Timeline -->
+    <section>
+        <div class="container">
+            <div class="section-title">
+                <h2>Experience & Education</h2>
+                <p>My professional journey and academic background.</p>
+            </div>
+            <div class="table-container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Year</th>
+                            <th>Position/Degree</th>
+                            <th>Institution</th>
+                            <th>Description</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>2021 - Present</td>
+                            <td>Bachelor's in Computer Engineering</td>
+                            <td>An-Najah National University</td>
+                            <td>Fifth-year Computer Engineering student specializing in Full Stack Development, expected graduation 2026</td>
+                        </tr>
+                        <tr>
+                            <td>2022 - Present</td>
+                            <td>Self-Learning & Projects</td>
+                            <td>Online Courses & GitHub</td>
+                            <td>Building personal projects and learning new technologies</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <!-- Personal Info -->
     <section class="bg-light">
         <div class="container">
             <div class="section-title">
-                <h2>Featured Work</h2>
-                <p>Take a look at some of my recent projects on GitHub.</p>
+                <h2>Personal Information</h2>
+                <p>Get to know me better.</p>
             </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <h3>Quick Facts About Me</h3>
+                    <ul class="info-list">
+                        <li><strong>Name:</strong> Nassar Harashi</li>
+                        <li><strong>Location:</strong> Tulkarm, Palestine</li>
+                        <li><strong>University:</strong> An-Najah National University</li>
+                        <li><strong>Email:</strong> nassark669@gmail.com</li>
+                        <li><strong>GitHub:</strong> <a href="https://github.com/nassarharashi" target="_blank">@nassarharashi</a></li>
+                        <li><strong>Specialization:</strong> Full Stack Development (Node.js, Express, React)</li>
+                    </ul>
+                    <h3 class="mt-4">Hobbies & Interests</h3>
+                    <p>When I'm not coding, you can find me:</p>
+                    <ol class="info-list">
+                        <li>Exploring new technologies and frameworks</li>
+                        <li>Reading tech blogs and books</li>
+                        <li>Playing video games</li>
+                        <li>Traveling and photography</li>
+                        <li>Contributing to open-source projects</li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════════════════ -->
+    <!-- SKILLS SECTION -->
+    <!-- ═══════════════════════════════════════════════════════════ -->
+    <section id="skills">
+        <div class="container">
+            <div class="section-title">
+                <h2>Programming Languages</h2>
+                <p>Languages I use to build applications and solve problems.</p>
+            </div>
+            <div class="cards-grid">
+                <article class="card service-card">
+                    <div class="service-icon">🟨</div>
+                    <h3>JavaScript</h3>
+                    <p>Building interactive web applications, working with Node.js for backend development, and creating dynamic user interfaces.</p>
+                </article>
+                <article class="card service-card">
+                    <div class="service-icon">☕</div>
+                    <h3>Java</h3>
+                    <p>Object-oriented programming, building desktop and web applications, working with JavaFX for GUI applications.</p>
+                </article>
+                <article class="card service-card">
+                    <div class="service-icon">🔵</div>
+                    <h3>C / C++</h3>
+                    <p>Low-level programming, understanding memory management, data structures and algorithms implementation.</p>
+                </article>
+                <article class="card service-card">
+                    <div class="service-icon">🐍</div>
+                    <h3>Python</h3>
+                    <p>Scripting, automation, data processing, and building various applications with Python.</p>
+                </article>
+                <article class="card service-card">
+                    <div class="service-icon">🐘</div>
+                    <h3>PHP</h3>
+                    <p>Server-side web development, building dynamic websites and web applications.</p>
+                </article>
+                <article class="card service-card">
+                    <div class="service-icon">🌐</div>
+                    <h3>HTML5 & CSS3</h3>
+                    <p>Creating semantic, accessible web pages with modern styling, animations, and responsive layouts.</p>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Frameworks & Tools -->
+    <section class="bg-light">
+        <div class="container">
+            <div class="section-title">
+                <h2>Frameworks & Tools</h2>
+                <p>Technologies and tools I work with in my projects.</p>
+            </div>
+            <div class="cards-grid">
+                <article class="card service-card">
+                    <div class="service-icon">🚀</div>
+                    <h3>Node.js & Express</h3>
+                    <p>Building server-side applications, REST APIs, and full-stack web applications using Node.js and Express framework.</p>
+                </article>
+                <article class="card service-card">
+                    <div class="service-icon">⚛️</div>
+                    <h3>React & React Native</h3>
+                    <p>Building modern web and mobile applications with React ecosystem.</p>
+                </article>
+                <article class="card service-card">
+                    <div class="service-icon">🖥️</div>
+                    <h3>JavaFX</h3>
+                    <p>Building desktop GUI applications with Java and JavaFX framework.</p>
+                </article>
+                <article class="card service-card">
+                    <div class="service-icon">🔗</div>
+                    <h3>REST APIs</h3>
+                    <p>Designing and implementing RESTful APIs for web and mobile applications.</p>
+                </article>
+                <article class="card service-card">
+                    <div class="service-icon">🏗️</div>
+                    <h3>Microservices</h3>
+                    <p>Understanding microservices architecture and building distributed systems.</p>
+                </article>
+                <article class="card service-card">
+                    <div class="service-icon">🗄️</div>
+                    <h3>Databases</h3>
+                    <p>Working with MySQL, MongoDB, and other database systems for data storage and management.</p>
+                </article>
+                <article class="card service-card">
+                    <div class="service-icon">🔧</div>
+                    <h3>Git & GitHub</h3>
+                    <p>Version control, collaboration, and managing code repositories for team projects.</p>
+                </article>
+                <article class="card service-card">
+                    <div class="service-icon">💻</div>
+                    <h3>VS Code</h3>
+                    <p>Using Visual Studio Code as my primary development environment with various extensions.</p>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Currently Learning -->
+    <section>
+        <div class="container">
+            <div class="section-title">
+                <h2>Currently Learning</h2>
+                <p>Technologies I'm actively studying and improving.</p>
+            </div>
+            <div class="skills-list skills-center">
+                <span class="skill-tag">TypeScript</span>
+                <span class="skill-tag">Docker</span>
+                <span class="skill-tag">Cloud Computing</span>
+                <span class="skill-tag">System Design</span>
+                <span class="skill-tag">Data Structures</span>
+                <span class="skill-tag">Algorithms</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- All Technologies -->
+    <section class="bg-light">
+        <div class="container">
+            <div class="section-title">
+                <h2>All Technologies</h2>
+                <p>Complete list of technologies I have experience with.</p>
+            </div>
+            <div class="skills-list skills-center">
+                <span class="skill-tag">HTML5</span>
+                <span class="skill-tag">CSS3</span>
+                <span class="skill-tag">JavaScript</span>
+                <span class="skill-tag">Java</span>
+                <span class="skill-tag">C</span>
+                <span class="skill-tag">C++</span>
+                <span class="skill-tag">Python</span>
+                <span class="skill-tag">PHP</span>
+                <span class="skill-tag">Node.js</span>
+                <span class="skill-tag">React</span>
+                <span class="skill-tag">React Native</span>
+                <span class="skill-tag">JavaFX</span>
+                <span class="skill-tag">Express.js</span>
+                <span class="skill-tag">REST APIs</span>
+                <span class="skill-tag">Microservices</span>
+                <span class="skill-tag">MySQL</span>
+                <span class="skill-tag">MongoDB</span>
+                <span class="skill-tag">Git</span>
+                <span class="skill-tag">GitHub</span>
+                <span class="skill-tag">VS Code</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════════════════ -->
+    <!-- PORTFOLIO SECTION -->
+    <!-- ═══════════════════════════════════════════════════════════ -->
+    <section id="portfolio">
+        <div class="container">
+            <div class="section-title">
+                <h2>My Portfolio</h2>
+                <p>Explore some of the projects I've worked on.</p>
+            </div>
+
+            <!-- Filter Buttons -->
+            <div class="portfolio-filter">
+                <button class="filter-btn active">All</button>
+                <button class="filter-btn">Web Development</button>
+                <button class="filter-btn">UI/UX Design</button>
+                <button class="filter-btn">E-Commerce</button>
+                <button class="filter-btn">Mobile Apps</button>
+            </div>
+
+            <!-- Portfolio Grid -->
             <div class="cards-grid">
                 <article class="card">
                     <div class="card-image-wrapper">
@@ -140,9 +375,379 @@
                         </div>
                     </div>
                 </article>
+
+                <article class="card">
+                    <div class="card-image-wrapper">
+                        <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&h=300&fit=crop" alt="RentItOut" class="card-image">
+                        <div class="card-overlay">
+                            <a href="https://github.com/nassarharashi/RentItOut" target="_blank" class="btn btn-secondary">View Project</a>
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <h3>RentItOut</h3>
+                        <p>A platform for renting equipment and tools. Advanced Software Engineering course project. Includes booking, payment, and rating system.</p>
+                        <div class="tech-stack">
+                            <span class="tech-tag js">JavaScript</span>
+                            <span class="tech-tag node">Node.js</span>
+                            <span class="tech-tag express">Express</span>
+                            <span class="tech-tag db">MySQL</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="card">
+                    <div class="card-image-wrapper">
+                        <img src="https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=600&h=300&fit=crop" alt="Event Planner System" class="card-image">
+                        <div class="card-overlay">
+                            <a href="https://github.com/nassarharashi/Event-Planner-System" target="_blank" class="btn btn-secondary">View Project</a>
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <h3>Event Planner System</h3>
+                        <p>An event planning and management system. Features event scheduling, guest management, and automatic reminders.</p>
+                        <div class="tech-stack">
+                            <span class="tech-tag java">Java</span>
+                            <span class="tech-tag javafx">JavaFX</span>
+                            <span class="tech-tag db">SQLite</span>
+                        </div>
+                    </div>
+                </article>
             </div>
-            <div class="text-center mt-4">
-                <a href="portfolio.html" class="btn btn-primary">View All Projects</a>
+        </div>
+    </section>
+
+    <!-- Project Highlights -->
+    <section class="bg-light">
+        <div class="container">
+            <div class="section-title">
+                <h2>Project Highlights</h2>
+                <p>A closer look at each project and its details.</p>
+            </div>
+
+            <!-- MegaStore -->
+            <div class="about-content mb-4">
+                <div class="about-image">
+                    <img src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=800&h=600&fit=crop" alt="MegaStore Project" class="rounded-img">
+                </div>
+                <div class="about-text">
+                    <span class="blog-tag">JavaScript</span>
+                    <h3 class="mt-2">MegaStore</h3>
+                    <p>MegaStore is a comprehensive web application designed for managing wholesale store operations. It features inventory management, order processing, customer management, and detailed analytics.</p>
+                    <h5>Technologies Used:</h5>
+                    <div class="skills-list">
+                        <span class="skill-tag">JavaScript</span>
+                        <span class="skill-tag">Node.js</span>
+                        <span class="skill-tag">Database</span>
+                    </div>
+                    <h5 class="mt-3">Key Features:</h5>
+                    <ul class="info-list">
+                        <li>Inventory management system</li>
+                        <li>Order processing workflow</li>
+                        <li>Customer management</li>
+                        <li>Detailed analytics dashboard</li>
+                        <li>Wholesale operations support</li>
+                    </ul>
+                    <a href="https://github.com/nassarharashi/MegaStore" target="_blank" class="btn btn-primary mt-3">View on GitHub</a>
+                </div>
+            </div>
+
+            <hr class="section-divider">
+
+            <!-- Library System -->
+            <div class="about-content mb-4">
+                <div class="about-image">
+                    <img src="https://images.unsplash.com/photo-1507842217343-583bb7270b66?w=800&h=600&fit=crop" alt="Library System Project" class="rounded-img">
+                </div>
+                <div class="about-text">
+                    <span class="blog-tag">JavaScript</span>
+                    <h3 class="mt-2">Library System</h3>
+                    <p>A full-featured library management system that handles book catalog management, member registration, borrowing and returning workflows, and advanced search functionality.</p>
+                    <h5>Technologies Used:</h5>
+                    <div class="skills-list">
+                        <span class="skill-tag">JavaScript</span>
+                        <span class="skill-tag">Node.js</span>
+                        <span class="skill-tag">Database</span>
+                    </div>
+                    <h5 class="mt-3">Key Features:</h5>
+                    <ul class="info-list">
+                        <li>Book catalog management</li>
+                        <li>Member registration system</li>
+                        <li>Borrowing & returning workflow</li>
+                        <li>Advanced search functionality</li>
+                        <li>Overdue notifications</li>
+                    </ul>
+                    <a href="https://github.com/nassarharashi/library-system" target="_blank" class="btn btn-primary mt-3">View on GitHub</a>
+                </div>
+            </div>
+
+            <hr class="section-divider">
+
+            <!-- BAZAR-COM -->
+            <div class="about-content mb-4">
+                <div class="about-image">
+                    <img src="https://images.unsplash.com/photo-1512820790803-83ca734da794?w=800&h=600&fit=crop" alt="BAZAR-COM Project" class="rounded-img">
+                </div>
+                <div class="about-text">
+                    <span class="blog-tag">Microservices</span>
+                    <h3 class="mt-2">BAZAR-COM</h3>
+                    <p>An online bookstore built using microservices architecture. Each service handles a specific domain such as catalog, orders, and payments, communicating through REST APIs.</p>
+                    <h5>Technologies Used:</h5>
+                    <div class="skills-list">
+                        <span class="skill-tag">JavaScript</span>
+                        <span class="skill-tag">Microservices</span>
+                        <span class="skill-tag">REST APIs</span>
+                    </div>
+                    <h5 class="mt-3">Key Features:</h5>
+                    <ul class="info-list">
+                        <li>Microservices architecture</li>
+                        <li>Book catalog & search</li>
+                        <li>Shopping cart system</li>
+                        <li>Order processing</li>
+                        <li>Service-to-service communication</li>
+                    </ul>
+                    <a href="https://github.com/nassarharashi/BAZAR-COM" target="_blank" class="btn btn-primary mt-3">View on GitHub</a>
+                </div>
+            </div>
+
+            <hr class="section-divider">
+
+            <!-- RentItOut -->
+            <div class="about-content mb-4">
+                <div class="about-image">
+                    <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&h=600&fit=crop" alt="RentItOut Project" class="rounded-img">
+                </div>
+                <div class="about-text">
+                    <span class="blog-tag">JavaScript</span>
+                    <h3 class="mt-2">RentItOut</h3>
+                    <p>An equipment and tools rental platform developed as an Advanced Software Engineering course project. Users can list items for rent, book equipment, make payments, and leave reviews.</p>
+                    <h5>Technologies Used:</h5>
+                    <div class="skills-list">
+                        <span class="skill-tag">JavaScript</span>
+                        <span class="skill-tag">Node.js</span>
+                        <span class="skill-tag">Express.js</span>
+                        <span class="skill-tag">Database</span>
+                    </div>
+                    <h5 class="mt-3">Key Features:</h5>
+                    <ul class="info-list">
+                        <li>Equipment listing & browsing</li>
+                        <li>Booking & reservation system</li>
+                        <li>Payment processing</li>
+                        <li>User reviews & ratings</li>
+                        <li>Owner dashboard</li>
+                    </ul>
+                    <a href="https://github.com/nassarharashi/RentItOut" target="_blank" class="btn btn-primary mt-3">View on GitHub</a>
+                </div>
+            </div>
+
+            <hr class="section-divider">
+
+            <!-- Event Planner System -->
+            <div class="about-content mb-4">
+                <div class="about-image">
+                    <img src="https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=800&h=600&fit=crop" alt="Event Planner System Project" class="rounded-img">
+                </div>
+                <div class="about-text">
+                    <span class="blog-tag">Java</span>
+                    <h3 class="mt-2">Event Planner System</h3>
+                    <p>An event planning and management system built with Java. It allows users to create, schedule, and manage events, handle guest lists, send invitations, and set up automatic reminders.</p>
+                    <h5>Technologies Used:</h5>
+                    <div class="skills-list">
+                        <span class="skill-tag">Java</span>
+                        <span class="skill-tag">JavaFX</span>
+                        <span class="skill-tag">Database</span>
+                    </div>
+                    <h5 class="mt-3">Key Features:</h5>
+                    <ul class="info-list">
+                        <li>Event creation & scheduling</li>
+                        <li>Guest list management</li>
+                        <li>Invitation system</li>
+                        <li>Automatic reminders</li>
+                        <li>Event analytics & reports</li>
+                    </ul>
+                    <a href="https://github.com/nassarharashi/Event-Planner-System" target="_blank" class="btn btn-primary mt-3">View on GitHub</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════════════════ -->
+    <!-- GALLERY SECTION -->
+    <!-- ═══════════════════════════════════════════════════════════ -->
+    <section id="gallery">
+        <div class="container">
+            <div class="section-title">
+                <h2>Gallery</h2>
+                <p>Visual showcase of my work and projects.</p>
+            </div>
+            <div class="album-grid">
+                <article class="album-item">
+                    <img src="images/1.jpg" alt="Project 1">
+                </article>
+                <article class="album-item">
+                    <img src="images/2.jpg" alt="Project 2">
+                </article>
+                <article class="album-item">
+                    <img src="images/3.jpg" alt="Project 3">
+                </article>
+                <article class="album-item">
+                    <img src="images/4.jpg" alt="Project 4">
+                </article>
+                <article class="album-item">
+                    <img src="images/5.jpg" alt="Project 5">
+                </article>
+                <article class="album-item">
+                    <img src="images/6.jpg" alt="Project 6">
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════════════════ -->
+    <!-- FAQ SECTION -->
+    <!-- ═══════════════════════════════════════════════════════════ -->
+    <section id="faq" class="bg-light">
+        <div class="container">
+            <div class="section-title">
+                <h2>Frequently Asked Questions</h2>
+                <p>Find answers to common questions.</p>
+            </div>
+            <div class="cards-grid" style="max-width: 900px; margin: 0 auto;">
+                <article class="card">
+                    <div class="card-content">
+                        <h4>What technologies do you work with?</h4>
+                        <p>I work with JavaScript, Java, Node.js, HTML/CSS, and various frameworks. I also have experience with Microservices architecture and REST APIs.</p>
+                    </div>
+                </article>
+                <article class="card">
+                    <div class="card-content">
+                        <h4>How can I contact you?</h4>
+                        <p>You can reach me via email at nassark669@gmail.com or through the contact form below.</p>
+                    </div>
+                </article>
+                <article class="card">
+                    <div class="card-content">
+                        <h4>Where are you located?</h4>
+                        <p>I'm based in Tulkarm, Palestine. I'm available for remote work and collaboration.</p>
+                    </div>
+                </article>
+                <article class="card">
+                    <div class="card-content">
+                        <h4>Can I see your previous work?</h4>
+                        <p>Yes! Check out my <a href="#portfolio">Portfolio section</a> above or visit my <a href="https://github.com/nassarharashi" target="_blank">GitHub profile</a> to see my projects.</p>
+                    </div>
+                </article>
+                <article class="card">
+                    <div class="card-content">
+                        <h4>Are you available for freelance work?</h4>
+                        <p>Yes, I'm open to freelance opportunities and collaborations. Feel free to contact me to discuss your project.</p>
+                    </div>
+                </article>
+                <article class="card">
+                    <div class="card-content">
+                        <h4>What is your educational background?</h4>
+                        <p>I'm studying Computer Engineering and currently training in Full Stack Development. I have hands-on experience through various academic and personal projects.</p>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════════════════ -->
+    <!-- CONTACT SECTION -->
+    <!-- ═══════════════════════════════════════════════════════════ -->
+    <section id="contact">
+        <div class="container">
+            <div class="section-title">
+                <h2>Get In Touch</h2>
+                <p>Have a project in mind? Let's discuss how I can help bring your ideas to life.</p>
+            </div>
+            <div class="contact-section">
+                <div class="contact-info">
+                    <h3>Contact Information</h3>
+                    <p>Feel free to reach out to me through any of the following channels. I'm always happy to discuss new projects, creative ideas, or opportunities.</p>
+
+                    <div class="contact-item">
+                        <div class="contact-icon">📧</div>
+                        <div>
+                            <h4>Email</h4>
+                            <p>nassark669@gmail.com</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <div class="contact-icon">📞</div>
+                        <div>
+                            <h4>Phone</h4>
+                            <p>0568195145</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <div class="contact-icon">📍</div>
+                        <div>
+                            <h4>Location</h4>
+                            <p>Tulkarm, Palestine</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <div class="contact-icon">⏰</div>
+                        <div>
+                            <h4>Working Hours</h4>
+                            <p>Mon - Fri: 9:00 AM - 6:00 PM</p>
+                        </div>
+                    </div>
+
+                    <h4 class="mt-4" style="margin-bottom: 1rem;">Follow Me on Social Media</h4>
+                    <div class="social-links-contact">
+                        <a href="https://www.facebook.com/profile.php?id=100084645202736" target="_blank" title="Facebook" class="social-btn facebook-btn">
+                            <svg width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+                            </svg>
+                            <span>Facebook</span>
+                        </a>
+                        <a href="https://github.com/nassarharashi" target="_blank" title="GitHub" class="social-btn github-btn">
+                            <svg width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                            </svg>
+                            <span>GitHub</span>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="contact-form">
+                    <h3>Send Me a Message</h3>
+                    <form action="#" method="POST">
+                        <div class="form-group">
+                            <label for="name">Full Name *</label>
+                            <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email Address *</label>
+                            <input type="email" id="email" name="email" placeholder="Enter your email address" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" id="phone" name="phone" placeholder="Enter your phone number">
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Subject *</label>
+                            <select id="subject" name="subject" required>
+                                <option value="">Select a subject</option>
+                                <option value="general">General Inquiry</option>
+                                <option value="project">Project Discussion</option>
+                                <option value="quote">Request a Quote</option>
+                                <option value="support">Support</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message *</label>
+                            <textarea id="message" name="message" placeholder="Write your message here..." required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    </form>
+                </div>
             </div>
         </div>
     </section>
@@ -152,7 +757,7 @@
         <div class="container">
             <h2>Ready to Start Your Project?</h2>
             <p>Let's work together to bring your ideas to life. Get in touch today!</p>
-            <a href="contact.html" class="btn btn-secondary">Contact Me</a>
+            <a href="#contact" class="btn btn-secondary">Contact Me</a>
         </div>
     </section>
 
@@ -167,11 +772,11 @@
                 <div class="footer-section">
                     <h4>Quick Links</h4>
                     <div class="footer-links">
-                        <a href="index.html">Home</a>
-                        <a href="about.html">About</a>
-                        <a href="skills.html">Skills</a>
-                        <a href="portfolio.html">Portfolio</a>
-                        <a href="contact.html">Contact</a>
+                        <a href="#home">Home</a>
+                        <a href="#about">About</a>
+                        <a href="#skills">Skills</a>
+                        <a href="#portfolio">Portfolio</a>
+                        <a href="#contact">Contact</a>
                     </div>
                 </div>
                 <div class="footer-section">
@@ -196,18 +801,105 @@
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2026 Portfolio. All Rights Reserved.</p>
+                <p>&copy; 2026 Nassar Harashi. All Rights Reserved.</p>
             </div>
         </div>
     </footer>
 
-    <!-- JavaScript for Mobile Menu -->
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="backToTop" title="Back to Top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
     <script>
+        // ─── Mobile Menu Toggle ───
         const menuToggle = document.querySelector('.menu-toggle');
         const navLinks = document.querySelector('.nav-links');
 
         menuToggle.addEventListener('click', () => {
             navLinks.classList.toggle('active');
+            menuToggle.classList.toggle('active');
+        });
+
+        // Close mobile menu when a nav link is clicked
+        document.querySelectorAll('.nav-links a').forEach(link => {
+            link.addEventListener('click', () => {
+                navLinks.classList.remove('active');
+                menuToggle.classList.remove('active');
+            });
+        });
+
+        // ─── Active Navigation on Scroll (Intersection Observer) ───
+        const sections = document.querySelectorAll('section[id]');
+        const navItems = document.querySelectorAll('.nav-links a');
+
+        const observerOptions = {
+            root: null,
+            rootMargin: '-20% 0px -60% 0px',
+            threshold: 0
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    const id = entry.target.getAttribute('id');
+                    navItems.forEach(item => {
+                        item.classList.remove('active');
+                        if (item.getAttribute('href') === '#' + id) {
+                            item.classList.add('active');
+                        }
+                    });
+                }
+            });
+        }, observerOptions);
+
+        sections.forEach(section => observer.observe(section));
+
+        // ─── Smooth scroll with offset for sticky header ───
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href');
+                const targetEl = document.querySelector(targetId);
+                if (targetEl) {
+                    const headerHeight = document.querySelector('header').offsetHeight;
+                    const targetPosition = targetEl.getBoundingClientRect().top + window.pageYOffset - headerHeight;
+                    window.scrollTo({
+                        top: targetPosition,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+
+        // ─── Header shadow on scroll + Back to Top ───
+        const backToTopBtn = document.getElementById('backToTop');
+        window.addEventListener('scroll', () => {
+            const header = document.querySelector('header');
+            if (window.scrollY > 50) {
+                header.classList.add('scrolled');
+            } else {
+                header.classList.remove('scrolled');
+            }
+            // Show/hide back to top button
+            if (window.scrollY > 600) {
+                backToTopBtn.classList.add('visible');
+            } else {
+                backToTopBtn.classList.remove('visible');
+            }
+        });
+
+        backToTopBtn.addEventListener('click', () => {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+
+        // ─── Portfolio Filter Buttons ───
+        const filterBtns = document.querySelectorAll('.filter-btn');
+        filterBtns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                filterBtns.forEach(b => b.classList.remove('active'));
+                btn.classList.add('active');
+            });
         });
     </script>
 </body>

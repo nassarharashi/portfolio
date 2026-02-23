@@ -121,6 +121,7 @@ html {
     -moz-osx-font-smoothing: grayscale;
     text-rendering: optimizeLegibility;
     font-size: 16px;
+    scroll-padding-top: 80px;
 }
 
 body {
@@ -2270,3 +2271,64 @@ ol.info-list {
    END OF STYLESHEET
    Professional Portfolio Design by Nassar Harashi
    ═══════════════════════════════════════════════════════════════════ */
+
+/* ═══════════════════════════════════════════════════════════════════
+   24. SINGLE-PAGE NAVIGATION HELPERS
+   ═══════════════════════════════════════════════════════════════════ */
+
+/* Smooth transition for active nav link */
+.nav-links a {
+    transition: all var(--transition-base), color var(--transition-fast);
+}
+
+/* Active nav indicator underline */
+.nav-links a.active::after {
+    content: '';
+    position: absolute;
+    bottom: 2px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60%;
+    height: 2px;
+    background: var(--accent);
+    border-radius: var(--radius-full);
+}
+
+[class*="page-"] .nav-links a.active::after {
+    background: var(--page-accent);
+}
+
+/* Back to top button */
+.back-to-top {
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    width: 48px;
+    height: 48px;
+    border-radius: var(--radius-lg);
+    background: linear-gradient(135deg, var(--accent), var(--accent-dark));
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.25rem;
+    box-shadow: var(--shadow-accent-lg);
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(20px);
+    transition: all var(--transition-base);
+    z-index: var(--z-fixed);
+}
+
+.back-to-top.visible {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.back-to-top:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 30px -6px rgba(59, 130, 246, 0.5);
+}
